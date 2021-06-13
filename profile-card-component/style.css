@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg) ,url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    font-family: 'Kumbh Sans';
+    overflow: hidden;
+}
+
+.container{
+    background-color: antiquewhite;
+    width:400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 6% 0 0 0;
+}
+
+.card{
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 400px 165px;
+    border-radius: 10px;
+}
+
+img{
+    border: 5px solid antiquewhite;
+    border-radius: 100px;
+    margin: 27% 150px 0 150px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    color: hsl(229, 23%, 23%);
+
+}
+.name-age{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin:28px 0 0 0;
+}
+.name-age p{
+    color: hsl(0, 0%, 59%);
+    margin:30px 0 0 15px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    color: hsl(229, 23%, 23%);
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.numbers{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    color: hsl(229, 23%, 23%);
+    display: flex;
+    position: relative;
+}
+
+.followers{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.followers h6{
+    margin: 24px 35px 0 55px;
+}
+.followers p{
+    padding: 5px 35px 0 40px;
+}
+
+.likes h6{
+    margin: 24px 35px 0 40px;
+}
+.likes p{
+    padding: 5px 35px 0 45px;
+}
+
+.photos h6{
+    margin: 24px 35px 0 40px;
+}
+.photos p{
+    padding: 5px 35px 0 35px;
+}
+
+.numbers h6{
+    font-size: 20px;
+}
+.numbers p{
+    font-size: 15px;
+    margin: 0;
+}
+
+@media (max-width:375px) and (min-width:275px){
+    body{
+        max-height: 100%;
+        max-width: 100%;
+        overflow-y: hidden;
+    }
+    .card{
+        background-size: 320px 105px;
+    }
+    .container{
+        width:320px;
+        height: 320px;
+        border-radius: 10px;
+        margin: 25% 25% 0 28%;
+    }
+    img{
+        margin: 17% 110px 0 110px;
+    }
+    h5{
+        margin:18px 0 0 0;
+    }
+    .name-age p{
+        margin:20px 0 0 12px;
+    }
+    .location{
+        padding-bottom: 4px;
+    }
+    .numbers h6{
+        font-size: 18px;
+    }
+    .numbers p{
+        font-size: 14px;
+    }
+    .followers h6{
+        margin: 20px 15px 0 35px;
+    }
+    .followers p{
+        padding: 5px 15px 0 25px;
+    }
+    .likes h6{
+        margin: 20px 15px 0 35px;
+    }
+    .likes p{
+        padding: 5px 25px 0 40px;
+    }
+    .photos h6{
+        margin: 20px 35px 0 40px;
+    }
+    .photos p{
+        padding: 5px 35px 0 35px;
+    }
+}
